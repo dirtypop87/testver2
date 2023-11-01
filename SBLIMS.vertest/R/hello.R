@@ -31,6 +31,6 @@ hello <- function() {
 #' @examples
 start1 <- function(){
   library(renv)
-  renv::activate()
-  renv::restore(lockfile = system.file("lock/renv.lock", package = "SBLIMS.vertest"), clean = TRUE)
+  # renv::activate()
+  renv::restore(lockfile = system.file("lock/renv.lock", package = "SBLIMS.vertest"), library = "C:/SBLIMS/lib", clean = TRUE)
 }
