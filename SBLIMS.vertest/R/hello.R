@@ -35,3 +35,16 @@ start1 <- function(path1="C:/SBLIMS/lib"){
   renv::restore(lockfile = system.file("lock/renv.lock", package = "SBLIMS.vertest"), library = path1, clean = TRUE)
   .libPaths(path1)
 }
+
+#' Title
+#'
+#' @return
+#' @export
+#'
+#' @examples
+.onLoad <- function(libname, pkgname){
+  library(renv)
+  # renv::activate()
+  renv::restore(lockfile = system.file("lock/renv.lock", package = "SBLIMS.vertest"), library = "C:/SBLIMS/lib", clean = TRUE)
+  .libPaths("C:/SBLIMS/lib")
+}
