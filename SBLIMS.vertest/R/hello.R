@@ -29,8 +29,9 @@ hello <- function() {
 #' @export
 #'
 #' @examples
-start1 <- function(){
+start1 <- function(path1="C:/SBLIMS/lib"){
   library(renv)
   # renv::activate()
-  renv::restore(lockfile = system.file("lock/renv.lock", package = "SBLIMS.vertest"), library = "C:/SBLIMS/lib", clean = TRUE)
+  renv::restore(lockfile = system.file("lock/renv.lock", package = "SBLIMS.vertest"), library = path1, clean = TRUE)
+  .libPaths(path1)
 }
