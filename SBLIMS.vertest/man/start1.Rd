@@ -6,9 +6,6 @@
 \usage{
 start1()
 }
-\arguments{
-\item{x}{}
-}
 \description{
 Title
 }

@@ -25,8 +25,6 @@ hello <- function() {
 
 #' Title
 #'
-#' @param x
-#'
 #' @return
 #' @export
 #'
@@ -34,5 +32,5 @@ hello <- function() {
 start1 <- function(){
   library(renv)
   renv::activate()
-  renv::restore(system.file("renv.lock", package = "SBLIMS.vertest"), clean = TRUE)
+  renv::restore(system.file("lock/renv.lock", package = "SBLIMS.vertest"), clean = TRUE)
 }
