@@ -31,11 +31,7 @@ hello <- function() {
 #' @export
 #'
 #' @examples
-# split1 <- function(x){
-#   stringr::str_split(x, ",")
-# }
-
-.onLoad <- function(libname, pkgname){
+start1 <- function(){
   library(renv)
   renv::activate()
   renv::restore(system.file("renv.lock", package = "SBLIMS.vertest"), clean = TRUE)
